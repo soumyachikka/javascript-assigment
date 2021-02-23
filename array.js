@@ -54,3 +54,20 @@ function range (start, end, step)
 console.log(range(1, 10));
 console.log(range(5, 2, -1));
  
+function sum (arrNums) 
+{
+ 
+  var numbers = arrNums.map(parseFloat);
+  total = 0;
+ 
+  for (count = 0; count < numbers.length; count++)
+  {
+    total += numbers[count];
+  }
+ 
+  return total;
+ 
+}
+ 
+console.log(sum(range(1, 10)));
+
